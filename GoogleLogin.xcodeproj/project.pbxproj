@@ -1,0 +1,781 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C2D9E204712030F4F8A369FB /* Pods_GoogleLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 240751A8BB58C83CD86BFA39 /* Pods_GoogleLogin.framework */; };
+		CE1BD1E0248E13B300D029C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1BD1DF248E13B300D029C4 /* AppDelegate.swift */; };
+		CE1BD1E2248E13B300D029C4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1BD1E1248E13B300D029C4 /* SceneDelegate.swift */; };
+		CE1BD1EA248E13B300D029C4 /* BusMap.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE1BD1E8248E13B300D029C4 /* BusMap.xcdatamodeld */; };
+		CE1BD1EC248E13B500D029C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE1BD1EB248E13B500D029C4 /* Assets.xcassets */; };
+		CE1BD1EF248E13B500D029C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE1BD1ED248E13B500D029C4 /* LaunchScreen.storyboard */; };
+		CE1BD1FA248E169C00D029C4 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1BD1F8248E169C00D029C4 /* MainViewController.swift */; };
+		CE1BD1FB248E169C00D029C4 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE1BD1F9248E169C00D029C4 /* MainViewController.xib */; };
+		CE27499524920610002F97CB /* MapBoxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE27499324920610002F97CB /* MapBoxViewController.swift */; };
+		CE27499624920610002F97CB /* MapBoxViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE27499424920610002F97CB /* MapBoxViewController.xib */; };
+		CE27499924920624002F97CB /* GoogleMapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE27499724920624002F97CB /* GoogleMapsViewController.swift */; };
+		CE27499A24920624002F97CB /* GoogleMapsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE27499824920624002F97CB /* GoogleMapsViewController.xib */; };
+		CE2749A024920797002F97CB /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE27499E24920797002F97CB /* ProfileTableViewController.swift */; };
+		CE2749A124920797002F97CB /* ProfileTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE27499F24920797002F97CB /* ProfileTableViewController.xib */; };
+		CE2749A3249215B4002F97CB /* icons8-menu-50.png in Resources */ = {isa = PBXBuildFile; fileRef = CE2749A2249215B4002F97CB /* icons8-menu-50.png */; };
+		CE2749A9249225DF002F97CB /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2749A7249225DF002F97CB /* ProfileTableViewCell.swift */; };
+		CE2749AA249225DF002F97CB /* ProfileTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE2749A8249225DF002F97CB /* ProfileTableViewCell.xib */; };
+		CE30B4742499FE5D003B6740 /* MainSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE30B4732499FE5D003B6740 /* MainSearchViewController.swift */; };
+		CE38540E249B3CE7007FEE14 /* icons8-back-30.png in Resources */ = {isa = PBXBuildFile; fileRef = CE38540D249B3CE7007FEE14 /* icons8-back-30.png */; };
+		CE385410249B4602007FEE14 /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE38540F249B4602007FEE14 /* CategoryView.swift */; };
+		CE385413249B495D007FEE14 /* SearchInterfaceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE385411249B495D007FEE14 /* SearchInterfaceTableViewCell.swift */; };
+		CE385414249B495D007FEE14 /* SearchInterfaceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE385412249B495D007FEE14 /* SearchInterfaceTableViewCell.xib */; };
+		CE385418249B4D6E007FEE14 /* CustomSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE385417249B4D6E007FEE14 /* CustomSearchBar.swift */; };
+		CE44108324A47EDB00F67C4B /* icons8-cafe-9.png in Resources */ = {isa = PBXBuildFile; fileRef = CE44108224A47EDB00F67C4B /* icons8-cafe-9.png */; };
+		CE44108524A47F2E00F67C4B /* icons8-cafe-m.png in Resources */ = {isa = PBXBuildFile; fileRef = CE44108424A47F2E00F67C4B /* icons8-cafe-m.png */; };
+		CE44108724A47F8500F67C4B /* icons8-cafe-30.png in Resources */ = {isa = PBXBuildFile; fileRef = CE44108624A47F8500F67C4B /* icons8-cafe-30.png */; };
+		CE44108924A4836600F67C4B /* icons8-bus-30.png in Resources */ = {isa = PBXBuildFile; fileRef = CE44108824A4836600F67C4B /* icons8-bus-30.png */; };
+		CE44108B24A4839900F67C4B /* icons8-restaurant-m.png in Resources */ = {isa = PBXBuildFile; fileRef = CE44108A24A4839900F67C4B /* icons8-restaurant-m.png */; };
+		CE44108D24A483D000F67C4B /* icons8-library-30.png in Resources */ = {isa = PBXBuildFile; fileRef = CE44108C24A483D000F67C4B /* icons8-library-30.png */; };
+		CE44109324A4A0B100F67C4B /* CustomMarkerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE44109224A4A0B100F67C4B /* CustomMarkerView.swift */; };
+		CE44109524A4AA9000F67C4B /* MarkerInforWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE44109424A4AA9000F67C4B /* MarkerInforWindow.swift */; };
+		CE44109724A4B28700F67C4B /* LayoutOps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE44109624A4B28700F67C4B /* LayoutOps.framework */; };
+		CE44109824A4B28800F67C4B /* LayoutOps.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CE44109624A4B28700F67C4B /* LayoutOps.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CE44E2AF24AEC49900C52321 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE44E2AE24AEC49900C52321 /* Constants.swift */; };
+		CE4ABB9C2493141600452BED /* GoogleMapsQueryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4ABB9B2493141600452BED /* GoogleMapsQueryService.swift */; };
+		CE4ABB9F2493153C00452BED /* PlaceMarkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4ABB9D2493153C00452BED /* PlaceMarkModel.swift */; };
+		CE4ABBA02493153C00452BED /* PlaceMarkViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4ABB9E2493153C00452BED /* PlaceMarkViewModel.swift */; };
+		CE4ABBA22493157700452BED /* MainQueryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4ABBA12493157700452BED /* MainQueryService.swift */; };
+		CE4ABBA8249315E700452BED /* SearchTableViewCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE4ABBA5249315E700452BED /* SearchTableViewCellTableViewCell.xib */; };
+		CE4ABBA9249315E700452BED /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4ABBA6249315E700452BED /* SearchTableViewController.swift */; };
+		CE4ABBAA249315E700452BED /* SearchTableViewCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4ABBA7249315E700452BED /* SearchTableViewCellTableViewCell.swift */; };
+		CE4ABBAD2493166400452BED /* Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4ABBAC2493166400452BED /* Delegate.swift */; };
+		CE4ABBB0249316DA00452BED /* MapBoxPlaceMarkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4ABBAE249316D900452BED /* MapBoxPlaceMarkModel.swift */; };
+		CE4ABBB1249316DA00452BED /* GoogleMapsPlaceMarkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4ABBAF249316D900452BED /* GoogleMapsPlaceMarkModel.swift */; };
+		CE4ABBB3249317E900452BED /* MapBoxQueryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4ABBB2249317E900452BED /* MapBoxQueryService.swift */; };
+		CE4ABBB524931FFF00452BED /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4ABBB424931FFF00452BED /* NavigationController.swift */; };
+		CE559B1E24A199FE00C10EEE /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE559B1C24A199FE00C10EEE /* CategoryCollectionViewCell.swift */; };
+		CE559B1F24A199FE00C10EEE /* CategoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE559B1D24A199FE00C10EEE /* CategoryCollectionViewCell.xib */; };
+		CE559B2124A1A64900C10EEE /* icons8-restaurant-48.png in Resources */ = {isa = PBXBuildFile; fileRef = CE559B2024A1A64900C10EEE /* icons8-restaurant-48.png */; };
+		CE559B2324A1A6AD00C10EEE /* icons8-cafe-50.png in Resources */ = {isa = PBXBuildFile; fileRef = CE559B2224A1A6AD00C10EEE /* icons8-cafe-50.png */; };
+		CE559B2524A1A6EB00C10EEE /* icons8-library-100.png in Resources */ = {isa = PBXBuildFile; fileRef = CE559B2424A1A6EB00C10EEE /* icons8-library-100.png */; };
+		CE559B2724A1A72F00C10EEE /* icons8-cafe-100.png in Resources */ = {isa = PBXBuildFile; fileRef = CE559B2624A1A72E00C10EEE /* icons8-cafe-100.png */; };
+		CE559B2924A1A74E00C10EEE /* icons8-restaurant-100.png in Resources */ = {isa = PBXBuildFile; fileRef = CE559B2824A1A74E00C10EEE /* icons8-restaurant-100.png */; };
+		CE559B2B24A1A77C00C10EEE /* icons8-bus-100.png in Resources */ = {isa = PBXBuildFile; fileRef = CE559B2A24A1A77C00C10EEE /* icons8-bus-100.png */; };
+		CE559B2D24A1BA5B00C10EEE /* PlaceMarkRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE559B2C24A1BA5B00C10EEE /* PlaceMarkRealm.swift */; };
+		CE784D85248E266800CD3F61 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE784D84248E266800CD3F61 /* User.swift */; };
+		CE784D87248E3A0100CD3F61 /* credentials.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE784D86248E3A0100CD3F61 /* credentials.plist */; };
+		CEC014D2249228E4003DB1AB /* OptionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC014D1249228E4003DB1AB /* OptionViewModel.swift */; };
+		CEC014D524922C1B003DB1AB /* Option.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC014D424922C1B003DB1AB /* Option.swift */; };
+		CEC014D724923714003DB1AB /* old-map-background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CEC014D624923714003DB1AB /* old-map-background.jpg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CE44109924A4B28800F67C4B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CE44109824A4B28800F67C4B /* LayoutOps.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		240751A8BB58C83CD86BFA39 /* Pods_GoogleLogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoogleLogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		441D93B4808E4219CC6E9F98 /* Pods-GoogleLogin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleLogin.debug.xcconfig"; path = "Target Support Files/Pods-GoogleLogin/Pods-GoogleLogin.debug.xcconfig"; sourceTree = "<group>"; };
+		6F57AA3E82075EBAE812BCAF /* Pods-GoogleLogin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleLogin.release.xcconfig"; path = "Target Support Files/Pods-GoogleLogin/Pods-GoogleLogin.release.xcconfig"; sourceTree = "<group>"; };
+		9B53CFA301B6105090D248C9 /* Pods-BusMap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BusMap.debug.xcconfig"; path = "Target Support Files/Pods-BusMap/Pods-BusMap.debug.xcconfig"; sourceTree = "<group>"; };
+		CE1BD1DC248E13B300D029C4 /* GoogleLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoogleLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE1BD1DF248E13B300D029C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CE1BD1E1248E13B300D029C4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CE1BD1E9248E13B300D029C4 /* BusMap.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BusMap.xcdatamodel; sourceTree = "<group>"; };
+		CE1BD1EB248E13B500D029C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE1BD1EE248E13B500D029C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CE1BD1F0248E13B500D029C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE1BD1F8248E169C00D029C4 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		CE1BD1F9248E169C00D029C4 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		CE27499324920610002F97CB /* MapBoxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapBoxViewController.swift; sourceTree = "<group>"; };
+		CE27499424920610002F97CB /* MapBoxViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapBoxViewController.xib; sourceTree = "<group>"; };
+		CE27499724920624002F97CB /* GoogleMapsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleMapsViewController.swift; sourceTree = "<group>"; };
+		CE27499824920624002F97CB /* GoogleMapsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GoogleMapsViewController.xib; sourceTree = "<group>"; };
+		CE27499E24920797002F97CB /* ProfileTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
+		CE27499F24920797002F97CB /* ProfileTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileTableViewController.xib; sourceTree = "<group>"; };
+		CE2749A2249215B4002F97CB /* icons8-menu-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-menu-50.png"; sourceTree = "<group>"; };
+		CE2749A7249225DF002F97CB /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
+		CE2749A8249225DF002F97CB /* ProfileTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileTableViewCell.xib; sourceTree = "<group>"; };
+		CE30B4732499FE5D003B6740 /* MainSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSearchViewController.swift; sourceTree = "<group>"; };
+		CE38540D249B3CE7007FEE14 /* icons8-back-30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-back-30.png"; sourceTree = "<group>"; };
+		CE38540F249B4602007FEE14 /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
+		CE385411249B495D007FEE14 /* SearchInterfaceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchInterfaceTableViewCell.swift; sourceTree = "<group>"; };
+		CE385412249B495D007FEE14 /* SearchInterfaceTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchInterfaceTableViewCell.xib; sourceTree = "<group>"; };
+		CE385417249B4D6E007FEE14 /* CustomSearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSearchBar.swift; sourceTree = "<group>"; };
+		CE44108224A47EDB00F67C4B /* icons8-cafe-9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-cafe-9.png"; sourceTree = "<group>"; };
+		CE44108424A47F2E00F67C4B /* icons8-cafe-m.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-cafe-m.png"; sourceTree = "<group>"; };
+		CE44108624A47F8500F67C4B /* icons8-cafe-30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-cafe-30.png"; sourceTree = "<group>"; };
+		CE44108824A4836600F67C4B /* icons8-bus-30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-bus-30.png"; sourceTree = "<group>"; };
+		CE44108A24A4839900F67C4B /* icons8-restaurant-m.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-restaurant-m.png"; sourceTree = "<group>"; };
+		CE44108C24A483D000F67C4B /* icons8-library-30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-library-30.png"; sourceTree = "<group>"; };
+		CE44109224A4A0B100F67C4B /* CustomMarkerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMarkerView.swift; sourceTree = "<group>"; };
+		CE44109424A4AA9000F67C4B /* MarkerInforWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkerInforWindow.swift; sourceTree = "<group>"; };
+		CE44109624A4B28700F67C4B /* LayoutOps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LayoutOps.framework; path = Carthage/Build/iOS/LayoutOps.framework; sourceTree = "<group>"; };
+		CE44E2AE24AEC49900C52321 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		CE4ABB9B2493141600452BED /* GoogleMapsQueryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleMapsQueryService.swift; sourceTree = "<group>"; };
+		CE4ABB9D2493153C00452BED /* PlaceMarkModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceMarkModel.swift; sourceTree = "<group>"; };
+		CE4ABB9E2493153C00452BED /* PlaceMarkViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceMarkViewModel.swift; sourceTree = "<group>"; };
+		CE4ABBA12493157700452BED /* MainQueryService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainQueryService.swift; sourceTree = "<group>"; };
+		CE4ABBA5249315E700452BED /* SearchTableViewCellTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SearchTableViewCellTableViewCell.xib; path = BusMap/ViewController/TableVC/Search/Result/SearchTableViewCellTableViewCell.xib; sourceTree = SOURCE_ROOT; };
+		CE4ABBA6249315E700452BED /* SearchTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchTableViewController.swift; path = BusMap/ViewController/TableVC/Search/Result/SearchTableViewController.swift; sourceTree = SOURCE_ROOT; };
+		CE4ABBA7249315E700452BED /* SearchTableViewCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchTableViewCellTableViewCell.swift; path = BusMap/ViewController/TableVC/Search/Result/SearchTableViewCellTableViewCell.swift; sourceTree = SOURCE_ROOT; };
+		CE4ABBAC2493166400452BED /* Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Delegate.swift; sourceTree = "<group>"; };
+		CE4ABBAE249316D900452BED /* MapBoxPlaceMarkModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapBoxPlaceMarkModel.swift; sourceTree = "<group>"; };
+		CE4ABBAF249316D900452BED /* GoogleMapsPlaceMarkModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleMapsPlaceMarkModel.swift; sourceTree = "<group>"; };
+		CE4ABBB2249317E900452BED /* MapBoxQueryService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapBoxQueryService.swift; sourceTree = "<group>"; };
+		CE4ABBB424931FFF00452BED /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		CE559B1C24A199FE00C10EEE /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		CE559B1D24A199FE00C10EEE /* CategoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCollectionViewCell.xib; sourceTree = "<group>"; };
+		CE559B2024A1A64900C10EEE /* icons8-restaurant-48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-restaurant-48.png"; sourceTree = "<group>"; };
+		CE559B2224A1A6AD00C10EEE /* icons8-cafe-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-cafe-50.png"; sourceTree = "<group>"; };
+		CE559B2424A1A6EB00C10EEE /* icons8-library-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-library-100.png"; sourceTree = "<group>"; };
+		CE559B2624A1A72E00C10EEE /* icons8-cafe-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-cafe-100.png"; sourceTree = "<group>"; };
+		CE559B2824A1A74E00C10EEE /* icons8-restaurant-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-restaurant-100.png"; sourceTree = "<group>"; };
+		CE559B2A24A1A77C00C10EEE /* icons8-bus-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-bus-100.png"; sourceTree = "<group>"; };
+		CE559B2C24A1BA5B00C10EEE /* PlaceMarkRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceMarkRealm.swift; sourceTree = "<group>"; };
+		CE784D84248E266800CD3F61 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		CE784D86248E3A0100CD3F61 /* credentials.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = credentials.plist; sourceTree = "<group>"; };
+		CEC014D1249228E4003DB1AB /* OptionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionViewModel.swift; sourceTree = "<group>"; };
+		CEC014D424922C1B003DB1AB /* Option.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Option.swift; sourceTree = "<group>"; };
+		CEC014D624923714003DB1AB /* old-map-background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "old-map-background.jpg"; sourceTree = "<group>"; };
+		EF89AF359276189D2E6A67D7 /* Pods-BusMap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BusMap.release.xcconfig"; path = "Target Support Files/Pods-BusMap/Pods-BusMap.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE1BD1D9248E13B300D029C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2D9E204712030F4F8A369FB /* Pods_GoogleLogin.framework in Frameworks */,
+				CE44109724A4B28700F67C4B /* LayoutOps.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		95DD4A53B5211320D1B013CC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE44109624A4B28700F67C4B /* LayoutOps.framework */,
+				240751A8BB58C83CD86BFA39 /* Pods_GoogleLogin.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE1BD1D3248E13B300D029C4 = {
+			isa = PBXGroup;
+			children = (
+				CE1BD1DE248E13B300D029C4 /* BusMap */,
+				CE1BD1DD248E13B300D029C4 /* Products */,
+				D9327E3BA2889F8612CA7398 /* Pods */,
+				95DD4A53B5211320D1B013CC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CE1BD1DD248E13B300D029C4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE1BD1DC248E13B300D029C4 /* GoogleLogin.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE1BD1DE248E13B300D029C4 /* BusMap */ = {
+			isa = PBXGroup;
+			children = (
+				CE4ABBAC2493166400452BED /* Delegate.swift */,
+				CE4ABB9A249313F100452BED /* QueryService */,
+				CEC4947E248F248E00DFAEA1 /* Model */,
+				CEC014D0249228CF003DB1AB /* ViewModel */,
+				CE1BD1DF248E13B300D029C4 /* AppDelegate.swift */,
+				CE1BD1ED248E13B500D029C4 /* LaunchScreen.storyboard */,
+				CE1BD1FF248E1DB700D029C4 /* ViewController */,
+				CE1BD1FC248E1ADD00D029C4 /* Support */,
+			);
+			path = BusMap;
+			sourceTree = "<group>";
+		};
+		CE1BD1FC248E1ADD00D029C4 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				CE1BD1E1248E13B300D029C4 /* SceneDelegate.swift */,
+				CE1BD1EB248E13B500D029C4 /* Assets.xcassets */,
+				CE44108C24A483D000F67C4B /* icons8-library-30.png */,
+				CE44108A24A4839900F67C4B /* icons8-restaurant-m.png */,
+				CE44108824A4836600F67C4B /* icons8-bus-30.png */,
+				CE44108624A47F8500F67C4B /* icons8-cafe-30.png */,
+				CE44108424A47F2E00F67C4B /* icons8-cafe-m.png */,
+				CE44108224A47EDB00F67C4B /* icons8-cafe-9.png */,
+				CE559B2A24A1A77C00C10EEE /* icons8-bus-100.png */,
+				CE38540D249B3CE7007FEE14 /* icons8-back-30.png */,
+				CE559B2024A1A64900C10EEE /* icons8-restaurant-48.png */,
+				CE559B2424A1A6EB00C10EEE /* icons8-library-100.png */,
+				CE559B2624A1A72E00C10EEE /* icons8-cafe-100.png */,
+				CE559B2824A1A74E00C10EEE /* icons8-restaurant-100.png */,
+				CE559B2224A1A6AD00C10EEE /* icons8-cafe-50.png */,
+				CEC014D624923714003DB1AB /* old-map-background.jpg */,
+				CE2749A2249215B4002F97CB /* icons8-menu-50.png */,
+				CE1BD1F0248E13B500D029C4 /* Info.plist */,
+				CE1BD1E8248E13B300D029C4 /* BusMap.xcdatamodeld */,
+				CE784D86248E3A0100CD3F61 /* credentials.plist */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		CE1BD1FF248E1DB700D029C4 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CE4ABBB424931FFF00452BED /* NavigationController.swift */,
+				CE1BD1F8248E169C00D029C4 /* MainViewController.swift */,
+				CE1BD1F9248E169C00D029C4 /* MainViewController.xib */,
+				CE27499324920610002F97CB /* MapBoxViewController.swift */,
+				CE27499424920610002F97CB /* MapBoxViewController.xib */,
+				CE27499724920624002F97CB /* GoogleMapsViewController.swift */,
+				CE27499824920624002F97CB /* GoogleMapsViewController.xib */,
+				CE27499B24920645002F97CB /* View */,
+				CE2749A4249217C0002F97CB /* TableVC */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		CE27499B24920645002F97CB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE44109224A4A0B100F67C4B /* CustomMarkerView.swift */,
+				CE44109424A4AA9000F67C4B /* MarkerInforWindow.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE2749A4249217C0002F97CB /* TableVC */ = {
+			isa = PBXGroup;
+			children = (
+				CE4ABBAB2493163500452BED /* Search */,
+				CE2749AB249225ED002F97CB /* Profile */,
+			);
+			path = TableVC;
+			sourceTree = "<group>";
+		};
+		CE2749AB249225ED002F97CB /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				CE27499E24920797002F97CB /* ProfileTableViewController.swift */,
+				CE27499F24920797002F97CB /* ProfileTableViewController.xib */,
+				CE2749A7249225DF002F97CB /* ProfileTableViewCell.swift */,
+				CE2749A8249225DF002F97CB /* ProfileTableViewCell.xib */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		CE385415249B4989007FEE14 /* Result */ = {
+			isa = PBXGroup;
+			children = (
+				CE4ABBA6249315E700452BED /* SearchTableViewController.swift */,
+				CE4ABBA7249315E700452BED /* SearchTableViewCellTableViewCell.swift */,
+				CE4ABBA5249315E700452BED /* SearchTableViewCellTableViewCell.xib */,
+			);
+			path = Result;
+			sourceTree = "<group>";
+		};
+		CE385416249B49A3007FEE14 /* SearchInterface */ = {
+			isa = PBXGroup;
+			children = (
+				CE30B4732499FE5D003B6740 /* MainSearchViewController.swift */,
+				CE385411249B495D007FEE14 /* SearchInterfaceTableViewCell.swift */,
+				CE385412249B495D007FEE14 /* SearchInterfaceTableViewCell.xib */,
+				CE38540F249B4602007FEE14 /* CategoryView.swift */,
+				CE559B1C24A199FE00C10EEE /* CategoryCollectionViewCell.swift */,
+				CE559B1D24A199FE00C10EEE /* CategoryCollectionViewCell.xib */,
+			);
+			path = SearchInterface;
+			sourceTree = "<group>";
+		};
+		CE4ABB9A249313F100452BED /* QueryService */ = {
+			isa = PBXGroup;
+			children = (
+				CE4ABBB2249317E900452BED /* MapBoxQueryService.swift */,
+				CE4ABBA12493157700452BED /* MainQueryService.swift */,
+				CE4ABB9B2493141600452BED /* GoogleMapsQueryService.swift */,
+			);
+			path = QueryService;
+			sourceTree = "<group>";
+		};
+		CE4ABBAB2493163500452BED /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				CE385417249B4D6E007FEE14 /* CustomSearchBar.swift */,
+				CE385416249B49A3007FEE14 /* SearchInterface */,
+				CE385415249B4989007FEE14 /* Result */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		CEC014D0249228CF003DB1AB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CE4ABB9E2493153C00452BED /* PlaceMarkViewModel.swift */,
+				CEC014D1249228E4003DB1AB /* OptionViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CEC4947E248F248E00DFAEA1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CE4ABBAF249316D900452BED /* GoogleMapsPlaceMarkModel.swift */,
+				CE4ABBAE249316D900452BED /* MapBoxPlaceMarkModel.swift */,
+				CE4ABB9D2493153C00452BED /* PlaceMarkModel.swift */,
+				CE784D84248E266800CD3F61 /* User.swift */,
+				CEC014D424922C1B003DB1AB /* Option.swift */,
+				CE559B2C24A1BA5B00C10EEE /* PlaceMarkRealm.swift */,
+				CE44E2AE24AEC49900C52321 /* Constants.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D9327E3BA2889F8612CA7398 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9B53CFA301B6105090D248C9 /* Pods-BusMap.debug.xcconfig */,
+				EF89AF359276189D2E6A67D7 /* Pods-BusMap.release.xcconfig */,
+				441D93B4808E4219CC6E9F98 /* Pods-GoogleLogin.debug.xcconfig */,
+				6F57AA3E82075EBAE812BCAF /* Pods-GoogleLogin.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE1BD1DB248E13B300D029C4 /* GoogleLogin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE1BD1F3248E13B500D029C4 /* Build configuration list for PBXNativeTarget "GoogleLogin" */;
+			buildPhases = (
+				8B2F1F560811DCFD6A6A75D8 /* [CP] Check Pods Manifest.lock */,
+				CE1BD1D8248E13B300D029C4 /* Sources */,
+				CE1BD1D9248E13B300D029C4 /* Frameworks */,
+				CE1BD1DA248E13B300D029C4 /* Resources */,
+				D7CDCAF196E45DE037706736 /* [CP] Embed Pods Frameworks */,
+				A2A11C33922A983EFFF71C8C /* [CP] Copy Pods Resources */,
+				CE44109924A4B28800F67C4B /* Embed Frameworks */,
+				CE44109A24A4B29E00F67C4B /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GoogleLogin;
+			productName = BusMap;
+			productReference = CE1BD1DC248E13B300D029C4 /* GoogleLogin.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE1BD1D4248E13B300D029C4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = vinova;
+				TargetAttributes = {
+					CE1BD1DB248E13B300D029C4 = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+				};
+			};
+			buildConfigurationList = CE1BD1D7248E13B300D029C4 /* Build configuration list for PBXProject "GoogleLogin" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CE1BD1D3248E13B300D029C4;
+			productRefGroup = CE1BD1DD248E13B300D029C4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE1BD1DB248E13B300D029C4 /* GoogleLogin */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE1BD1DA248E13B300D029C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE44108D24A483D000F67C4B /* icons8-library-30.png in Resources */,
+				CE1BD1EF248E13B500D029C4 /* LaunchScreen.storyboard in Resources */,
+				CE784D87248E3A0100CD3F61 /* credentials.plist in Resources */,
+				CEC014D724923714003DB1AB /* old-map-background.jpg in Resources */,
+				CE38540E249B3CE7007FEE14 /* icons8-back-30.png in Resources */,
+				CE559B2724A1A72F00C10EEE /* icons8-cafe-100.png in Resources */,
+				CE559B2524A1A6EB00C10EEE /* icons8-library-100.png in Resources */,
+				CE1BD1FB248E169C00D029C4 /* MainViewController.xib in Resources */,
+				CE44108924A4836600F67C4B /* icons8-bus-30.png in Resources */,
+				CE385414249B495D007FEE14 /* SearchInterfaceTableViewCell.xib in Resources */,
+				CE44108324A47EDB00F67C4B /* icons8-cafe-9.png in Resources */,
+				CE1BD1EC248E13B500D029C4 /* Assets.xcassets in Resources */,
+				CE559B2324A1A6AD00C10EEE /* icons8-cafe-50.png in Resources */,
+				CE44108B24A4839900F67C4B /* icons8-restaurant-m.png in Resources */,
+				CE27499A24920624002F97CB /* GoogleMapsViewController.xib in Resources */,
+				CE559B1F24A199FE00C10EEE /* CategoryCollectionViewCell.xib in Resources */,
+				CE2749AA249225DF002F97CB /* ProfileTableViewCell.xib in Resources */,
+				CE2749A3249215B4002F97CB /* icons8-menu-50.png in Resources */,
+				CE2749A124920797002F97CB /* ProfileTableViewController.xib in Resources */,
+				CE27499624920610002F97CB /* MapBoxViewController.xib in Resources */,
+				CE44108524A47F2E00F67C4B /* icons8-cafe-m.png in Resources */,
+				CE559B2124A1A64900C10EEE /* icons8-restaurant-48.png in Resources */,
+				CE559B2924A1A74E00C10EEE /* icons8-restaurant-100.png in Resources */,
+				CE44108724A47F8500F67C4B /* icons8-cafe-30.png in Resources */,
+				CE559B2B24A1A77C00C10EEE /* icons8-bus-100.png in Resources */,
+				CE4ABBA8249315E700452BED /* SearchTableViewCellTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8B2F1F560811DCFD6A6A75D8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GoogleLogin-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A2A11C33922A983EFFF71C8C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GoogleLogin/Pods-GoogleLogin-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GoogleLogin/Pods-GoogleLogin-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GoogleLogin/Pods-GoogleLogin-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE44109A24A4B29E00F67C4B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/LayoutOps.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/local/bin/carthage copy-frameworks\n";
+		};
+		D7CDCAF196E45DE037706736 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GoogleLogin/Pods-GoogleLogin-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GoogleLogin/Pods-GoogleLogin-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GoogleLogin/Pods-GoogleLogin-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE1BD1D8248E13B300D029C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEC014D2249228E4003DB1AB /* OptionViewModel.swift in Sources */,
+				CE385413249B495D007FEE14 /* SearchInterfaceTableViewCell.swift in Sources */,
+				CE1BD1E0248E13B300D029C4 /* AppDelegate.swift in Sources */,
+				CE4ABBA02493153C00452BED /* PlaceMarkViewModel.swift in Sources */,
+				CE559B2D24A1BA5B00C10EEE /* PlaceMarkRealm.swift in Sources */,
+				CE44109324A4A0B100F67C4B /* CustomMarkerView.swift in Sources */,
+				CE559B1E24A199FE00C10EEE /* CategoryCollectionViewCell.swift in Sources */,
+				CE4ABB9C2493141600452BED /* GoogleMapsQueryService.swift in Sources */,
+				CE27499524920610002F97CB /* MapBoxViewController.swift in Sources */,
+				CE44E2AF24AEC49900C52321 /* Constants.swift in Sources */,
+				CEC014D524922C1B003DB1AB /* Option.swift in Sources */,
+				CE2749A9249225DF002F97CB /* ProfileTableViewCell.swift in Sources */,
+				CE4ABBB1249316DA00452BED /* GoogleMapsPlaceMarkModel.swift in Sources */,
+				CE4ABBA9249315E700452BED /* SearchTableViewController.swift in Sources */,
+				CE4ABBAA249315E700452BED /* SearchTableViewCellTableViewCell.swift in Sources */,
+				CE1BD1E2248E13B300D029C4 /* SceneDelegate.swift in Sources */,
+				CE44109524A4AA9000F67C4B /* MarkerInforWindow.swift in Sources */,
+				CE4ABBB524931FFF00452BED /* NavigationController.swift in Sources */,
+				CE30B4742499FE5D003B6740 /* MainSearchViewController.swift in Sources */,
+				CE385418249B4D6E007FEE14 /* CustomSearchBar.swift in Sources */,
+				CE4ABBB3249317E900452BED /* MapBoxQueryService.swift in Sources */,
+				CE385410249B4602007FEE14 /* CategoryView.swift in Sources */,
+				CE4ABB9F2493153C00452BED /* PlaceMarkModel.swift in Sources */,
+				CE1BD1EA248E13B300D029C4 /* BusMap.xcdatamodeld in Sources */,
+				CE4ABBAD2493166400452BED /* Delegate.swift in Sources */,
+				CE27499924920624002F97CB /* GoogleMapsViewController.swift in Sources */,
+				CE784D85248E266800CD3F61 /* User.swift in Sources */,
+				CE4ABBA22493157700452BED /* MainQueryService.swift in Sources */,
+				CE2749A024920797002F97CB /* ProfileTableViewController.swift in Sources */,
+				CE1BD1FA248E169C00D029C4 /* MainViewController.swift in Sources */,
+				CE4ABBB0249316DA00452BED /* MapBoxPlaceMarkModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CE1BD1ED248E13B500D029C4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE1BD1EE248E13B500D029C4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CE1BD1F1248E13B500D029C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CE1BD1F2248E13B500D029C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CE1BD1F4248E13B500D029C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 441D93B4808E4219CC6E9F98 /* Pods-GoogleLogin.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				EXCLUDED_ARCHS = "";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = BusMap/Support/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = vinova.ios.intern.googlelogin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CE1BD1F5248E13B500D029C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F57AA3E82075EBAE812BCAF /* Pods-GoogleLogin.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				EXCLUDED_ARCHS = "";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = BusMap/Support/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = vinova.ios.intern.googlelogin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE1BD1D7248E13B300D029C4 /* Build configuration list for PBXProject "GoogleLogin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE1BD1F1248E13B500D029C4 /* Debug */,
+				CE1BD1F2248E13B500D029C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE1BD1F3248E13B500D029C4 /* Build configuration list for PBXNativeTarget "GoogleLogin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE1BD1F4248E13B500D029C4 /* Debug */,
+				CE1BD1F5248E13B500D029C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CE1BD1E8248E13B300D029C4 /* BusMap.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CE1BD1E9248E13B300D029C4 /* BusMap.xcdatamodel */,
+			);
+			currentVersion = CE1BD1E9248E13B300D029C4 /* BusMap.xcdatamodel */;
+			path = BusMap.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = CE1BD1D4248E13B300D029C4 /* Project object */;
+}
